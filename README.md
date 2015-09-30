@@ -52,4 +52,4 @@ Backend system contains functions that can provide the following services for th
 - Patient registration
 
 The database schema is shown in the following picture:
-![alt tag](https://github.com/andyafter/Doc-Here/master/1.jpg)
+![alt tag](https://github.com/andyafter/Doc-Here/blob/master/1.jpg)
