@@ -1,0 +1,14 @@
+<ion-view view-title="Delete">
+  <ion-content ng-controller="DeleteCtrl" ng-init="init()">
+    <div class="list">
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Clinic Name" ng-model="form.name">
+      </label>
+    </div>
+    <button class="button button-small button-outline button-positive" ng-click="deleteClinic(form)">Delete</button>
+
+    <p id='info'></p>
+    <p id='success'></p>
+
+  </ion-content>
+</ion-view>

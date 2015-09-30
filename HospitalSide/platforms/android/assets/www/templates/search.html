@@ -1,0 +1,24 @@
+<ion-view view-title="Search">
+  <ion-content ng-init="searchInit()">
+  <div class="list">
+      <label class="item item-input" type="item-text-wrap">
+        <input ion-autocomplete type="text" id="searchbar" placeholder="Name" ng-model="form.name" items-method="prefixList(query)" select-items-label="Select Hospital" items-clicked-method="search(form)">
+      </label>
+    </div>
+    <button class="button button-small button-outline button-positive" ng-click="search(form)">Search</button>
+    <div class="card" id="card" on-hold="searchCardOnHold()" on-double-tap="goToUpdate()">
+      <div class="item item-divider" id="cardheader">
+      </div>
+      <div class="item item-text-wrap" id="cardtext">
+          <p id="address1"><p>
+          <p id="address2"> <p>
+          <p id="estate"> <p>
+          <p id="telephone"> <p>
+      </div>
+      <div class="item item-divider" id="cardfooter">
+          I'm a Footer in a Card!
+      </div>
+     </div>
+    
+  </ion-content>
+</ion-view>

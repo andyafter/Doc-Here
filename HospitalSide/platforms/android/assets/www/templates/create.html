@@ -1,0 +1,26 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Create</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doCreate()">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Name" ng-model="clinicData.name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Address Line One" ng-model="clinicData.address_1">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Address Line Two" ng-model="clinicData.address_2">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Create</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

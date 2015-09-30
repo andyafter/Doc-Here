@@ -1,0 +1,30 @@
+<ion-view view-title="Update">
+  <ion-content ng-controller='AppCtrl' ng-init="initUpdate()">
+  <ion-nav-back-button class="button-clear" ng-click="backToSearch()">
+  </ion-nav-back-button>
+  <div class="bar bar-header bar-dark">
+	  <h1 class="title" id="clinicname"></h1>
+	</div>
+    <div class="list">
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Name" id="nameinput" ng-model="form.name">
+      </label>
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Address Line One" ng-model="form.address_1">
+      </label>
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Address Line Two" ng-model="form.address_2">
+      </label>
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Estate" ng-model="form.estate">
+      </label>
+      <label class="item item-input" type="item-text-wrap" >
+        <input type="text" placeholder="Phone Number" ng-model="form.telephone">
+      </label>
+    </div>
+    <button class="button button-small button-outline button-positive" ng-click="update(form)">Update</button>
+    <p id='id'></p>
+    <p id='name'></p>
+
+  </ion-content>
+</ion-view>
